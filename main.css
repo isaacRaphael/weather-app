@@ -1,0 +1,170 @@
+
+
+*,*::before,*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*declaring css variables*/
+
+
+body {
+	font-family: 'Noto Sans', sans-serif;
+	--Dark-color : #141F3D;
+	--Light-color : #BDB1EC;
+	--accent-color : #8E99AB;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 80vw;
+	margin: 0 auto;
+}
+
+body.dark{
+	--Dark-color :#BDB1EC;
+	--Light-color : #141F3D;
+	background: #141F3D;
+}
+
+header {
+	height: 10vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+
+header nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav h1 {
+	color: var(--Dark-color);
+	margin-left: 10px;
+}
+
+header nav .logo {
+	display: flex;
+	align-items: center;
+
+}
+
+header nav .logo img {
+	width : 4em;
+	margin-right: 10px;
+}
+
+header nav .header-icons img {
+	width: 3vw;
+	margin: 0 10px;
+	text-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+	transition: transform .2s ease;
+}
+
+header nav .header-icons img:hover {
+	transform: scale(1.08);
+}
+
+section.main {
+
+	background: rgba(189, 209, 236, 0.5);
+	border-radius: 100px;
+	height: 70vh;
+	width: 100%;
+	margin: 0px 0 25px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-cover {
+	width : 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.welcome-section {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.welcome-section h1, .welcome-section p {
+	margin-left: 65px;
+	color: #141F3D;
+	text-align: center;
+
+}
+.welcome-section h1 {
+	font-size: 5em;
+}
+
+.welcome-section p {
+	font-weight: lighter;
+	font-size: 1em;
+}
+
+.welcome-section img {
+	width : 30vw;
+}
+
+.weather-section {
+	width: 50%;
+	height: 20vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #141F3D;
+}
+
+
+.weather-section input {
+	border: none;
+	outline: none;
+	background: var(--accent-color);
+	font-size: 1.1em;
+	width: 26vw;
+	padding: .5em 1em;
+	border-radius: 10px;
+	color: #141F3D;
+
+}
+
+.weather-section input:hover, 
+.weather-section input:focus {
+	border: 2px solid #FF9C03;
+}
+
+.weather-section .location {
+	margin-top: 10px;
+	font-size: 2em;
+}
+
+.weather-section .date {
+	font-weight: lighter;
+
+}
+
+.weather-section .temp {
+ font-weight: bold;
+ font-size: 4em;
+}
+
+.weather-section .weather-icon {
+	width: 4vw;
+}
+
+

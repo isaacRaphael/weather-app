@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>weather app</title>
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
+	
+</head>
+<body id="body">
+<div class="container">
+
+<header>
+	<nav class="nav">
+		<div class="logo">
+			<img src="img/sun.svg">
+			<h1>Weather-Raphy</h1>
+		</div>
+		<div class="header-icons">
+			<img src="img/dark.svg" class="dark-btn"  onclick="toggleDark()">
+			<img src="img/light.svg"  class="dark-btn" onclick='toggleLight()'>
+		</div>
+		
+	</nav>
+</header>
+
+
+<section class="main">
+	<div class="main-cover">
+		<div class="welcome-section">
+			<div>
+			<h1>Welcome!</h1>
+			<p>wanna know weather today?</p>
+			</div>
+			<img src="img/girl.png">
+		</div>
+		<div class="weather-section">
+			<input type="text" placeholder="Enter Any Location here..."
+			 onfocus=" this.placeholder ='' " 
+			 onblur=" this.placeholder = 'Enter your Location here...' " 
+			 name="inputField" id="inputField" >
+			<h3 class="location">Lagos, Nig</h3>
+			<h3 class="date">12/05/2012</h3>
+			<h3 class="temp">25<sup>o</sup>C</h3>
+			<img class="weather-icon" src="img/rain.svg"></img>
+			<h3 class="weather">Rain</h3>
+			<h3 class="high-low">23<sup>o</sup>C / 29<sup>o</sup>C</h3>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="script2.js"></script>
+
+
+</div>
+</body>
+</html>

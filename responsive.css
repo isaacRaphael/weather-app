@@ -1,0 +1,98 @@
+@media screen and (max-width: 1000px) {
+		.welcome-section h1 {
+	    font-size: 3em;
+	} 
+		.welcome-section p {
+	    font-size: .8em;
+	}
+
+	.weather-section .location {
+		font-size: 1.5em;
+
+	}
+
+	.weather-section .date  {
+		font-size: .6em;
+	}
+
+	.weather-section .temp {
+	    font-weight: bold;
+	    font-size: 3em;
+	} 
+	.weather-section .high-low {
+		font-size: 1em;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	.weather-section input{
+		font-size: .8em;
+	}
+
+	header nav .header-icons img {
+		width: 5vw;
+	}
+}
+
+@media screen and (max-width: 750px) {
+
+	.main-cover{
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.main-cover .welcome-section{
+		flex-direction: row-reverse;
+		margin-bottom: 80px;
+	} 
+
+
+	.welcome-section img {
+		width: 15vw;
+	}
+	.welcome-section h1, .welcome-section p {
+		margin-left: 10px;
+	}
+	.welcome-section h1 {
+		font-size: 2em;
+		text-align: center;
+	}
+	.welcome-section p {
+		font-size: .6em;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.weather-section {
+		width: 70%;
+	}
+
+	.weather-section input{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	header nav {
+		flex-direction: column;
+	} 
+	header nav .header-icons img {
+		margin-top: 10px;
+		width: 10vw;
+	}
+
+	section.main {
+		height: 60vh;
+	}
+	.main-cover {
+		height: 80%;
+	}
+} 
+
+@media screen and (max-width: 330px) {
+	header nav h1 {
+		font-size: 1em;
+	}
+}
