@@ -86,8 +86,8 @@
 	section.main {
 		height: 60vh;
 	}
-	.main-cover {
-		height: 80%;
+	.main-cover .welcome-section {
+		flex-direction: column-reverse;
 	}
 	.welcome-section p {
 		display: none;
