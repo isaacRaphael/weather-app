@@ -1,18 +1,24 @@
-// let darkButton = document.querySelector('dark-btn')
+
 let htmlBody = document.getElementById('body')
 const pText = document.querySelector('.welcome-section p')
+
+window.addEventListener('load' , function(){
+	htmlBody.className = localStorage.getItem('currentTheme')
+})
 
 
 
 function toggleDark (){
-	 htmlBody.className ="dark"
+	htmlBody.className ="dark"
+	let currentTheme = htmlBody.classList[0]
+	if (currentTheme){
+		localStorage.setItem('currentTheme', currentTheme);
+	}
 }
 
 function toggleLight (){
 	htmlBody.classList.remove('dark')
+	localStorage.clear()
 }
 
 
-if (document.body.style.maxWidth <= 450) {
-	pText.innerHtTML = 'wanna know the weather today?'
-}
