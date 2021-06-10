@@ -1,6 +1,6 @@
 
 let htmlBody = document.getElementById('body')
-const pText = document.querySelector('.welcome-section p')
+
 
 window.addEventListener('load' , function(){
 	htmlBody.className = localStorage.getItem('currentTheme')
