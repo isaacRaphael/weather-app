@@ -92,10 +92,18 @@
 	.welcome-section p {
 		display: none;
 	}
+
+	.weather-section .weather-icon {
+		width: 8vw;
+	}
+	.weather-section .date {
+		font-size: .8em;
+	}
 } 
 
 @media screen and (max-width: 330px) {
 	header nav h1 {
 		font-size: 1em;
 	}
+
 }

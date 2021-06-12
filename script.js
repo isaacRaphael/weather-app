@@ -35,7 +35,10 @@ const getData = (search) => {
 // Search event
 inputField.addEventListener('keyup' , function(event){
 	if (event.keyCode === 13 ) {
-	 getData(inputField.value)
+
+
+	 const encodedInput = encodeURI(inputField.value)
+	 getData(encodedInput)
 	 inputField.value = ""
 	}
 
